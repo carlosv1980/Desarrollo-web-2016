@@ -1,0 +1,25 @@
+.titulo {
+	font-size: 70px;
+}
+.title-a{
+	font-size: 24px;
+}
+.title-b{
+	font-size: 50px;
+}
+.guitarras{
+	color: #1f313c;
+}
+
+.guitarras h2{
+	font-size: 35px;
+}
+
+.portada{
+	background-image: url('../images/background.png');
+	color: white;
+}
+
+.menu{
+	font-size: 24px;
+}
