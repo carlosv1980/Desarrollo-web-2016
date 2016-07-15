@@ -1,5 +1,10 @@
+body{
+	font-family: 'allerta', sans-serif;
+}
+
 .titulo {
 	font-size: 70px;
+	font-family: 'montserrat', sans-serif;
 }
 .title-a{
 	font-size: 24px;
@@ -13,6 +18,7 @@
 
 .guitarras h2{
 	font-size: 35px;
+	font-family: 'montserrat', sans-serif;
 }
 
 .portada{
