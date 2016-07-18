@@ -72,6 +72,44 @@ button {
 	font-family: 'montserrat', sans-serif;
 }
 
+.header{
+	position: relative;
+	/*utilizamos relative porque dentro contiene a menu que tiene absolute y que lo tome como padre */
+}
+
+.izquierda{
+	float: left;
+	position: relative;
+	top: 80px;
+}
+
+
+.logotipo {
+	display: inline-block;
+}
+
+.menu{
+	font-size: 24px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+
+.menu li{
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.portada{
+	background-image: url('../images/background.png');
+	color: white;
+	padding: 20px;
+}
+
+.portada button{
+	margin-bottom: 70px;
+}
+
 .titulo {
 	font-size: 70px;
 	font-family: 'montserrat', sans-serif;
@@ -87,46 +125,9 @@ button {
 	margin-bottom: 20px;
 }
 
-.portada{
-	background-image: url('../images/background.png');
-	color: white;
-	padding: 20px;
-}
-
-.portada button{
-	margin-bottom: 70px;
-}
-
-.menu{
-	font-size: 24px;
-	display: inline-block;
-	position: absolute;
-	right: 0;
-}
-
-.menu li{
-	display: inline-block;
-	margin-left: 30px;
-}
-
-.logotipo {
-	display: inline-block;
-}
 
 
 
 
 
-
-.izquierda{
-	float: left;
-	position: relative;
-	top: 80px;
-}
-
-
-.header{
-	position: relative;
-	/*utilizamos relative porque dentro contiene a menu que tiene absolute y que lo tome como padre */
-}
 

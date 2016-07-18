@@ -65,9 +65,39 @@
 				<a href="tel:+34646378234"><strong>Teléfono</strong><span>666 444 333</span></a>
 				<a href="mailto:carlos@voodooroom.net"><strong>Email</strong>carlos@voodooroom.net</a>
 			</div>
-			<div class="formulario">
-				formulario
-			</div>
+			<form class="formulario">
+				<label for="nombre">Nombre</label>
+				<input type="text" id="nombre" required placeholder="pon tu nombre" name="nombre">
+				<label for="email">E-mail</label>
+				<input type="email" id="email" required placeholder="escribe tu correo" name="email">
+				<div class="sexo">
+					<label for="mujer">
+						<input type="radio" id="mujer" name="sexo" value="mujer"> mujer
+					</label>
+					<label for="hombre">
+						<input type="radio" id="hombre" name="sexo" value="hombre"> hombre
+					</label>
+				</div>
+				<div class="intereses">
+					<label for="cotizacion">
+						<input type="checkbox" id="cotizacion" name="intereses" value="cotizacion"> Cotización
+					</label>
+					<label for="reclamos">
+						<input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+					</label>
+					<label for="comentarios">
+						<input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
+					</label>
+					<label for="otros">
+						<input type="checkbox" id="otros" name="intereses" value="otros"> Otros
+					</label>
+				</div>
+				<div>
+					<label for="comentarios">Comentarios</label>
+					<textarea name="comentarios" id="comentarios" cols="30" rows="5"></textarea>
+					<input type="submit" value="Enviar">
+				</div>
+			</form>
 		</div>
 	</footer>
 </body>
