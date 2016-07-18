@@ -6,6 +6,72 @@ body{
 	margin: 0;
 }
 
+button {
+	border-radius: 5px;
+	border: none;
+	background: #fd324e;
+	color: white;
+}
+
+.contacto a{
+	color: white;
+	text-decoration: none;
+}
+.contacto img {
+	display: block;
+}
+
+.contacto strong{
+	display: block;
+}
+
+.contenedor{
+	width: 800px;
+	margin: 0 auto; 
+}
+
+.contenedor-guitarra-a{
+	padding-left: 20px;
+}
+
+.contenedor-guitarra-b{
+	margin-left: 370px;
+}
+
+.derecha{
+	float: right;
+	position: relative;
+	top: -127px;
+
+}
+
+.footer{
+	background: #1f313c;
+}
+
+.guitarra{
+	padding: 10px;
+	margin: 10px;
+	/*overflow: hidden;*/
+	/*le quitamos la propiedad overflow para que las imágenes de los guitarristas,
+	sobresalgan del cuadro*/
+	border: 1px solid #1f313c;
+	border-radius: 8px;
+}
+
+.guitarra ol{
+	padding: 0;
+}
+
+.guitarras{
+	color: #1f313c;	
+}
+
+.guitarras h2{
+	font-size: 35px;
+	font-family: 'montserrat', sans-serif;
+}
+
 .titulo {
 	font-size: 70px;
 	font-family: 'montserrat', sans-serif;
@@ -19,14 +85,6 @@ body{
 .title-b{
 	font-size: 50px;
 	margin-bottom: 20px;
-}
-.guitarras{
-	color: #1f313c;	
-}
-
-.guitarras h2{
-	font-size: 35px;
-	font-family: 'montserrat', sans-serif;
 }
 
 .portada{
@@ -57,30 +115,8 @@ body{
 
 
 
-.contenedor{
-	width: 800px;
-	margin: 0 auto; 
-}
 
-.guitarra{
-	padding: 10px;
-	margin: 10px;
-	/*overflow: hidden;*/
-	/*le quitamos la propiedad overflow para que las imágenes de los guitarristas,
-	sobresalgan del cuadro*/
-	border: 1px solid #1f313c;
-}
 
-.guitarra ol{
-	padding: 0;
-}
-
-.derecha{
-	float: right;
-	position: relative;
-	top: -127px;
-
-}
 
 .izquierda{
 	float: left;
@@ -88,15 +124,9 @@ body{
 	top: 80px;
 }
 
-.contenedor-guitarra-a{
-	padding-left: 20px;
-}
-
-.contenedor-guitarra-b{
-	margin-left: 370px;
-}
 
 .header{
 	position: relative;
 	/*utilizamos relative porque dentro contiene a menu que tiene absolute y que lo tome como padre */
 }
+
