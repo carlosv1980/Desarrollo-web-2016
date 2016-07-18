@@ -42,6 +42,8 @@ body{
 .menu{
 	font-size: 24px;
 	display: inline-block;
+	position: absolute;
+	right: 0;
 }
 
 .menu li{
@@ -63,7 +65,9 @@ body{
 .guitarra{
 	padding: 10px;
 	margin: 10px;
-	overflow: hidden;
+	/*overflow: hidden;*/
+	/*le quitamos la propiedad overflow para que las imágenes de los guitarristas,
+	sobresalgan del cuadro*/
 	border: 1px solid #1f313c;
 }
 
@@ -73,11 +77,15 @@ body{
 
 .derecha{
 	float: right;
+	position: relative;
+	top: -127px;
 
 }
 
 .izquierda{
 	float: left;
+	position: relative;
+	top: 80px;
 }
 
 .contenedor-guitarra-a{
@@ -86,4 +94,9 @@ body{
 
 .contenedor-guitarra-b{
 	margin-left: 370px;
+}
+
+.header{
+	position: relative;
+	/*utilizamos relative porque dentro contiene a menu que tiene absolute y que lo tome como padre */
 }
