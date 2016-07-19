@@ -6,11 +6,47 @@ body{
 	margin: 0;
 }
 
+input, textarea{
+	outline: 0;
+}
+input:focus , textarea:focus {
+	background: lightgray;
+}
+table{
+	width: 100%;
+}
+
+th{
+	background: #273b47;
+	color: white;
+	padding: 10px 20px;
+	text-align: left;
+}
+
+td{
+	padding: 20px;
+}
+
+table, th, td{
+	border: 1px solid #273b47;
+	border-collapse: collapse;
+}
+
+.background{
+	background-image: url('../images/background.png');
+	background-size: cover;
+}
+
 .button {
-	border-radius: 5px;
+	border-radius: 12px;
 	border: none;
 	background: #fd324e;
 	color: white;
+	font-size: 18px;
+	padding: 7px 12px;
+	background: linear-gradient(to left, #fe344e, #ff7250);
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .col1, .col2{
@@ -24,6 +60,10 @@ body{
 
 .col2{
 	align-items: flex-start;
+}
+
+.col2 .button{
+	margin-top: 10px;
 }
 
 .contacto{
@@ -47,7 +87,8 @@ body{
 
 .contenedor{
 	width: 800px;
-	margin: 0 auto; 
+	margin: 0 auto;
+	position: relative; 
 }
 
 .contenedor-guitarra-a{
@@ -56,6 +97,8 @@ body{
 
 .contenedor-guitarra-b{
 	margin-left: 370px;
+	position: relative;
+	bottom: 90px;
 }
 
 .derecha{
@@ -67,6 +110,7 @@ body{
 
 .footer{
 	background: #1f313c;
+	padding: 50px 10px;
 }
 
 .footer .contenedor {
@@ -78,7 +122,7 @@ body{
 	display: flex;
 	width: 400px;
 	color: white;
-	padding: 50px 10px;
+	
 }
 
 .formulario label, .sexo, .intereses{
@@ -87,7 +131,7 @@ body{
 
 .guitarra{
 	padding: 10px;
-	margin: 10px;
+	margin: 10px 10px 40px 10px;;
 	/*overflow: hidden;*/
 	/*le quitamos la propiedad overflow para que las imágenes de los guitarristas,
 	sobresalgan del cuadro*/
@@ -99,8 +143,13 @@ body{
 	padding: 0;
 }
 
+.guitarra.b{
+	height: 190px;
+}
+
 .guitarras{
 	color: #1f313c;	
+	margin-bottom: 60px !important;
 }
 
 .guitarras h2{
@@ -120,12 +169,12 @@ body{
 .izquierda{
 	float: left;
 	position: relative;
-	top: 80px;
 }
 
 
 .logotipo {
 	display: inline-block;
+	margin-left: 0;
 }
 
 .menu{
@@ -134,6 +183,11 @@ body{
 	position: absolute;
 	right: 0;
 
+}
+
+.menu a{
+	color: white;
+	text-decoration: none;
 }
 
 .menu li{
@@ -145,13 +199,13 @@ body{
 	font-size: 50px;
 	line-height: 20px;
 	content: '∘';
-	color: blue;
+	color: white;
 }
 
 .portada{
-	background-image: url('../images/background.png');
 	color: white;
 	padding: 20px;
+	height: 500px;
 }
 
 .portada button{
@@ -162,24 +216,8 @@ body{
 	margin-top: 10px;
 }
 
-table{
-	width: 100%;
-}
-
-th{
-	background: #273b47;
-	color: white;
-	padding: 10px 20px;
-	text-align: left;
-}
-
-td{
-	padding: 20px;
-}
-
-table, th, td{
-	border: 1px solid #273b47;
-	border-collapse: collapse;
+.tabla{
+	margin: 50px 0;
 }
 
 .titulo {
@@ -188,6 +226,11 @@ table, th, td{
 	margin-bottom: 0px;
 	margin-top: 70px;
 }
+
+.titulo span{
+	text-decoration: underline;
+}
+
 .title-a{
 	font-size: 24px;
 	margin-top: 0;
