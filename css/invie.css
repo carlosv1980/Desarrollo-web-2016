@@ -6,16 +6,36 @@ body{
 	margin: 0;
 }
 
-button {
+.button {
 	border-radius: 5px;
 	border: none;
 	background: #fd324e;
 	color: white;
 }
 
+.col1, .col2{
+	display: flex;
+	flex-direction: column;
+}
+
+.col1{
+	margin-right: 15px;
+}
+
+.col2{
+	align-items: flex-start;
+}
+
+.contacto{
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap;
+	align-items: center;
+}
 .contacto a{
 	color: white;
 	text-decoration: none;
+	margin: 10px 10px 10px 0;
 }
 .contacto img {
 	display: block;
@@ -49,6 +69,22 @@ button {
 	background: #1f313c;
 }
 
+.footer .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formulario{
+	display: flex;
+	width: 400px;
+	color: white;
+	padding: 50px 10px;
+}
+
+.formulario label, .sexo, .intereses{
+	margin-bottom: 10px;
+}
+
 .guitarra{
 	padding: 10px;
 	margin: 10px;
@@ -75,6 +111,10 @@ button {
 .header{
 	position: relative;
 	/*utilizamos relative porque dentro contiene a menu que tiene absolute y que lo tome como padre */
+}
+
+.intereses label{
+	font-size: 11px;
 }
 
 .izquierda{
@@ -108,6 +148,10 @@ button {
 
 .portada button{
 	margin-bottom: 70px;
+}
+
+.sexo{
+	margin-top: 10px;
 }
 
 .titulo {
