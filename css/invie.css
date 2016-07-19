@@ -133,11 +133,19 @@ body{
 	display: inline-block;
 	position: absolute;
 	right: 0;
+
 }
 
 .menu li{
 	display: inline-block;
 	margin-left: 30px;
+}
+
+.menu li:before{
+	font-size: 50px;
+	line-height: 20px;
+	content: '∘';
+	color: blue;
 }
 
 .portada{
