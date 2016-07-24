@@ -86,9 +86,11 @@ table, th, td{
 }
 
 .contenedor{
-	width: 800px;
+	max-width: 800px;
+	/*De 800 para arriba, contendor mantendrá un ancho de 800px
+	de 800 para abajo, contenedor tiene un ancho auto, ideal para hacer responsive*/
 	margin: 0 auto;
-	position: relative; 
+	position: relative;
 }
 
 .contenedor-guitarra-a{
@@ -122,7 +124,7 @@ table, th, td{
 	display: flex;
 	width: 400px;
 	color: white;
-	
+
 }
 
 .formulario label, .sexo, .intereses{
@@ -148,7 +150,7 @@ table, th, td{
 }
 
 .guitarras{
-	color: #1f313c;	
+	color: #1f313c;
 	margin-bottom: 60px !important;
 }
 
@@ -241,8 +243,45 @@ table, th, td{
 }
 
 
+@media screen and (max-width: 800px){
 
+	/* portada  portada  portada  portada  portada */
+	.portada{
+		height: auto;
+	}
+	.portada .button{
+		display: inline-block;/*para poder darle margen*/
+		margin-bottom: 30px;
+	}
+	.titulo{
+		font-size: 45px;
+		margin-top: 30px;
+	}
+	.title-a{
+		font-size: 18px;
+	}
+	/* portada  portada  portada  portada  portada */
 
-
-
-
+	/* guitarras  guitarras  guitarras  guitarras  guitarras */
+	.contenedor-guitarra-b{
+		position: static;
+		margin: 0;
+	}
+	.guitarras{
+		text-align: center;
+	}
+	.guitarra li{
+		list-style: none;
+	}
+	.guitarra.b{
+		height: auto;
+	}
+	.izquierda, .derecha{
+		float: none;
+		position: static;
+	}
+	.title-b{
+		margin: 0;
+	}
+	/* guitarras  guitarras  guitarras  guitarras  guitarras */
+}
