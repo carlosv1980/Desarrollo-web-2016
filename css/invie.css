@@ -267,6 +267,9 @@ table, th, td{
 		position: static;
 		margin: 0;
 	}
+	.contenedor-guitarra-a{
+		padding: 0;
+	}
 	.guitarras{
 		text-align: center;
 	}
@@ -284,4 +287,109 @@ table, th, td{
 		margin: 0;
 	}
 	/* guitarras  guitarras  guitarras  guitarras  guitarras */
+
+}
+
+@media screen and (max-width: 767px){
+/* footer footer footer footer footer */
+	input[type="text"], input[type="email"]{
+		font-size: 16px;
+		padding: 5px;
+	}
+
+	input[type="radio"], input[type="checkbox"]{
+		zoom: 1.5;
+	}
+
+	textarea{
+		width: 100%;
+	}
+
+	.footer .contenedor{
+		display: block;
+	}
+
+	.col1{
+		margin: 0;
+	}
+
+	.contacto{
+		margin: 0 auto;
+	}
+
+	.formulario{
+		display: block;
+		margin: 0 auto;
+		width: 300px;
+	}
+
+	.intereses label{
+		display: block;
+		font-size: 16px;
+	}
+
+	/* footer footer footer footer footer */
+}
+
+
+@media screen and (max-width: 650px){
+/* portada  portada  portada  portada  portada */
+	.header{
+			text-align: center
+	}
+	.logotipo{
+		margin: 0;
+	}
+	.menu{
+		position: static;
+		display: block;
+
+	}
+	.menu li:first-child{
+		margin: 0;
+	}
+	.menu ul{
+		padding: 0;
+	}
+/* portada  portada  portada  portada  portada */
+}
+
+@media screen and (max-width: 500px){
+	/* portada  portada  portada  portada  portada */
+	.menu li{
+		display: block;
+		margin: 0;
+		padding: 8px 0;
+		border-bottom: 1px solid white;
+	}
+	.menu li::before{
+		display: none;
+	}
+	.menu li:first-child{
+		border-top: 1px solid white;
+	}
+	.portada{
+		text-align: center;
+	}
+	.titulo{
+		font-size: 30px;
+	}
+	.title-a{
+		font-size: 16px;
+	}
+	/* portada  portada  portada  portada  portada */
+
+	/* guitarras  guitarras  guitarras  guitarras  guitarras */
+
+	.guitarra img{
+		width: 200px;
+	}
+	.title-b{
+		font-size: 30px;
+	}
+		/* guitarras  guitarras  guitarras  guitarras  guitarras */
+
+		/* footer footer footer footer footer */
+
+		/* footer footer footer footer footer */
 }
