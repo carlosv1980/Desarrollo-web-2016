@@ -12,7 +12,8 @@
 			<figure class="logotipo"><!-- logotipo -->
 				<img src="images/invie.png" width="186" height="60" alt="Logotipo Invie">
 			</figure>
-			<nav class="menu"><!--menu-->
+			<span class="burguer-button icon-menu" id="burguer-button"></span>
+			<nav class="menu" id="menu"><!--menu-->
 				<ul>
 					<li>
 						<a href="index.html"> Home</a>
@@ -45,7 +46,7 @@
 				</ol>
 			</div>
 		</article>
-		
+
 		<article class="guitarra b"><!-- guitarra 2 -->
 			<img class=" izquierda" src="images/invie-classic.png" alt="Guitarra invie classic" width="350">
 			<div class="contenedor-guitarra-b">
@@ -102,5 +103,13 @@
 			</form>
 		</div>
 	</footer>
+<script type="text/javascript">
+	var $burguerButton = document.getElementById('burguer-button');
+	var $menu = document.getElementById('menu');
+
+	$burguerButton.addEventListener('click',function(){
+		$menu.classList.toggle('active');
+	});
+</script>
 </body>
 </html>
