@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/invie.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<title>Invie - tus mejores guitarras</title>
 </head>
 <body>
@@ -36,7 +37,7 @@
 	<section id="guitarras" class="guitarras contenedor"><!-- guitarras -->
 		<h2>Nuestras guitarras</h2>
 		<article class="guitarra"><!-- guitarra 1 -->
-			<img class=" derecha" src="images/invie-acustica.png" alt="Guitarra invie acústica" width="350">
+			<img class=" derecha" data-src="images/invie-acustica.png" alt="Guitarra invie acústica" width="350">
 			<div class="contenedor-guitarra-a">
 				<h3 class="title-b">Invie Acústica</h3>
 				<ol>
@@ -48,7 +49,7 @@
 		</article>
 
 		<article class="guitarra b"><!-- guitarra 2 -->
-			<img class=" izquierda" src="images/invie-classic.png" alt="Guitarra invie classic" width="350">
+			<img class=" izquierda" data-src="images/invie-classic.png" alt="Guitarra invie classic" width="350">
 			<div class="contenedor-guitarra-b">
 				<h3 class="title-b">Invie Classic</h3>
 				<ol>
@@ -62,7 +63,7 @@
 	<footer class="footer">
 		<div class="contenedor">
 			<div class="contacto">
-				<img src="images/invie-white.png" alt="logotipo blanco">
+				<img data-src="images/invie-white.png" alt="logotipo blanco">
 				<a href="tel:+34646378234"><strong>Teléfono</strong><span>666 444 333</span></a>
 				<a href="mailto:carlos@voodooroom.net"><strong>Email</strong>yo@gmail.com</a>
 			</div>
@@ -103,13 +104,47 @@
 			</form>
 		</div>
 	</footer>
-<script type="text/javascript">
-	var $burguerButton = document.getElementById('burguer-button');
-	var $menu = document.getElementById('menu');
 
-	$burguerButton.addEventListener('click',function(){
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js">
+	//lamamos a la libreria be lazy
+</script>
+<script type="text/javascript">
+	//guardamos en una variable un mediaquery
+	var consulta = window.matchMedia('(max-width: 500px)');
+	//le añadimos un "escuchante". Cada vez que cambie la pantalla, avisa a la funcion mediaQuery
+	consulta.addListener(mediaQuery);
+
+	//le asignamos a una variable el elemento con id burguer-button
+	var $burguerButton = document.getElementById('burguer-button');
+	//le asignamos a una variable el elemento con id menu
+	var $menu = document.getElementById('menu');
+	//creamos una funcion
+	//hacemos que le apliquemos a menu la clase active, que tenemos puesta en nuestro css
+	//y pone el menu dentro de la pantalla
+	function toogleMenu(){
 		$menu.classList.toggle('active');
-	});
+	}
+
+
+	function mediaQuery(){
+		if(consulta.matches){
+
+			console.log('se cumplió la condición');
+			$burguerButton.addEventListener('touchstart', toogleMenu);
+
+		} else {
+
+			console.log('no se cumplió la condición');
+			$burguerButton.removeEventListener('touchstart', toogleMenu);
+
+		}
+	}
+	mediaQuery();
+
+	// lazy loading --------------------------------------------------//
+	var bLazy = new Blazy({
+    selector: 'img'
+});
 </script>
 </body>
 </html>
