@@ -77,11 +77,13 @@ video{
 }
 
 .background{
+	background-color: #466173;
 	background-image: url('../images/background.png');
 	background-size: cover;
 }
 
 .burguer-button{
+	color: white;
 	width: 40px;
 	border-radius: 50%;
 	line-height: 40px;
@@ -317,7 +319,27 @@ video{
   height: 100%;
 }
 
+
+@media screen and(-webkit-min-device-pixel-ratio: 2){
+	.background{
+		background-image: url('../images/background2x.png');
+		background-size: cover;
+	}	
+}
+
+
+
 @media screen and (max-width: 800px){
+
+	/* PRECIOS PRECIOS PRECIOS PRECIOS PRECIOS PRECIOS  */
+	.tabla{
+		margin: 50px 20px;
+	}
+	.tabla .contenedor {
+		overflow: auto;
+		border: 1px solid #273b47;
+	}
+	/* PRECIOS PRECIOS PRECIOS PRECIOS PRECIOS PRECIOS  */
 
 	/* portada  portada  portada  portada  portada */
 	.portada{
@@ -432,6 +454,14 @@ video{
 	/* portada  portada  portada  portada  portada */
   .portada .contenedor{
     position: static;
+  }
+  /* esta es para precios */
+  .header{
+  	position: static;
+  }
+  /* esta es para precios */
+  .header .contenedor{
+  	position: static;
   }
   .menu{
     background: rgba(255, 60, 88, 0.8);
