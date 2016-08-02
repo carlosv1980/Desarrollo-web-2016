@@ -98,6 +98,8 @@ video{
   top: 20px;
   cursor: pointer;
   z-index: 3;
+  display: none;
+  position: fixed;
 }
 
 .button {
@@ -319,6 +321,18 @@ video{
   height: 100%;
 }
 
+.video-demo{
+	max-width: 500px;
+	width: 100%;
+	border: 5px solid #3c5b6e;
+}
+
+.video-demo-contenedor{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 80px;
+}
+
 
 @media screen and(-webkit-min-device-pixel-ratio: 2){
 	.background{
@@ -359,6 +373,9 @@ video{
 	/* portada  portada  portada  portada  portada */
 
 	/* guitarras  guitarras  guitarras  guitarras  guitarras */
+	.video-demo-contenedor{
+		margin-bottom: 30px;
+	}
 	.contenedor-guitarra-b{
 		position: static;
 		margin: 0;
@@ -448,10 +465,26 @@ video{
 		padding: 0;
 	}
 /* portada  portada  portada  portada  portada */
+
+/* guitarras  guitarras  guitarras  guitarras  guitarras */
+	/*.video-demo{
+		margin: 0 10px;
+	}*/
+/* guitarras  guitarras  guitarras  guitarras  guitarras */
 }
 
 @media screen and (max-width: 500px){
 	/* portada  portada  portada  portada  portada */
+	.portada .button{
+		display: block;
+	}
+	.precios .header .logotipo{
+		margin: 50px 0;
+	}
+
+	.burguer-button{
+		display: block;
+	}
   .portada .contenedor{
     position: static;
   }
@@ -465,7 +498,7 @@ video{
   }
   .menu{
     background: rgba(255, 60, 88, 0.8);
-    position: absolute;
+    position: fixed;
     left: -100%;
     top: 0;
     bottom: 0;
@@ -519,9 +552,14 @@ video{
 	.title-b{
 		font-size: 30px;
 	}
+	.video-demo-contenedor{
+		margin: 0 10px 30px 10px;
+	}
 		/* guitarras  guitarras  guitarras  guitarras  guitarras */
 
 		/* footer footer footer footer footer */
-
+		.col2{
+			align-items: stretch;
+		} 
 		/* footer footer footer footer footer */
 }
