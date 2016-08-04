@@ -405,6 +405,9 @@ video{
 
 @media screen and (max-width: 767px){
 /* footer footer footer footer footer */
+	input[type="text"]{
+		margin-bottom: 30px;
+	}
 	input[type="text"], input[type="email"]{
 		font-size: 16px;
 		padding: 5px;
@@ -428,6 +431,11 @@ video{
 
 	.contacto{
 		margin: 0 auto;
+		display: block;
+	}
+
+	.contacto a{
+		display: block;
 	}
 
 	.formulario{
@@ -436,9 +444,17 @@ video{
 		width: 300px;
 	}
 
+	.formulario label{
+		font-size: 20px;
+	}
+
+
 	.intereses label{
 		display: block;
-		font-size: 16px;
+		font-size: 20px;
+	}
+	.sexo label {
+		display: block;
 	}
 
 	/* footer footer footer footer footer */
