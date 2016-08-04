@@ -59,3 +59,10 @@ https://developers.google.com/speed/pagespeed/insights/
 Compresión de imágenes para web:
 https://tinypng.com/
 
+
+Crear un "parche crítico" de css para nuestro index:
+https://jonassebastianohlsson.com/criticalpathcssgenerator/
+
+Comprimir un css para que pese menos en nuestro index:
+http://csscompressor.com/
+
