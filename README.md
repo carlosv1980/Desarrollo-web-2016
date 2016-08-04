@@ -66,3 +66,6 @@ https://jonassebastianohlsson.com/criticalpathcssgenerator/
 Comprimir un css para que pese menos en nuestro index:
 http://csscompressor.com/
 
+Optimizar google fonts:
+Utilizando el script javascrip en vez de @import
+
