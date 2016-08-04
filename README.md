@@ -41,5 +41,21 @@ media screen and(-webkit-min-device-pixel-ratio: 2){
 Una vez terminado el proyecto y subido, creamos una rama llamada "gh-pages"
 En setting está la dirección del dominio donde se aloja el proyecto.
 
+
+
+
+
 ---   ---   REMOTE DEBUGGING   ---   ---
 Pendiente de trabajar
+
+
+
+
+---   ---   OPTIMIZANDO LA CARGA DEL SITIO   ---   ---
+
+Para comprobar la velocidad de nuestro site:
+https://developers.google.com/speed/pagespeed/insights/
+
+Compresión de imágenes para web:
+https://tinypng.com/
+
