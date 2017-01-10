@@ -23,6 +23,8 @@ inline-block: Los elementos inline-block fluyen con el texto y demás elementos 
 y además respetan el ancho, el alto y los márgenes verticales. 
 Son lo mejor de los dos mundos.
 
+DISPLAY: NONE Ocultamos los elementos
+
 
 ----- POSITION ----- ----- POSITION ----- ----- POSITION ----- ----- POSITION ----- ----- POSITION ----- 
 
