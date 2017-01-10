@@ -1,6 +1,37 @@
 ----- DISPLAY ---------- DISPLAY ---------- DISPLAY ---------- DISPLAY -----
 
 Elementos en línea
-Para explicarlo de manera sencilla, y simplificando, ciertas etiquetas HTML no afectan en absoluto al flujo de los demás elementos, limitándose a marcar ciertos fragmentos con una determinada semántica y dejando que el texto y otros elementos contiguos sigan fluyendo en la misma línea, colocándose a ambos lados de dicho elemento.
+Para explicarlo de manera sencilla, y simplificando, ciertas etiquetas HTML no afectan en absoluto al flujo de los demás elementos, 
+limitándose a marcar ciertos fragmentos con una determinada semántica y dejando que el texto y otros elementos contiguos 
+sigan fluyendo en la misma línea, colocándose a ambos lados de dicho elemento.
 
-Ejemplos de estas etiquetas son: <a>, <em>,<del>... y quizá la más útil de todas: la etiqueta <span>, que se usa para envolver elementos en-línea para darles estilo sin cambiar su comportamiento. A estos elementos HTML se les llama elementos de línea o, incluso más a menudo, por su denominación en inglés: elementos "inline".
+Ejemplos de estas etiquetas son: <a>, <em>,<del>... 
+y quizá la más útil de todas: la etiqueta <span>, 
+que se usa para envolver elementos en-línea para darles estilo sin cambiar su comportamiento. 
+A estos elementos HTML se les llama elementos de línea o, incluso más a menudo, por su denominación en inglés: elementos "inline".
+
+Elementos en bloque
+Por el contrario, ciertas etiquetas se renderizan en el navegador en líneas independientes, 
+no mezcladas con el resto del texto.  
+Ejemplos de estas etiquetas son los encabezados (<h1> hasta <h6>), las citas en bloque (<blockquote>), 
+por supuesto los párrafos (<p>), y quizá la más conocida de todas que es la etiqueta <div> 
+usada normalmente para envolver a otros elementos. A estos elementos se les denomina elementos de bloque.
+
+block: hace que el comportamiento del elemento sea como un bloque.
+inline: el elemento se renderizará en línea con otros elementos.
+inline-block: Los elementos inline-block fluyen con el texto y demás elementos como si fueran elementos en-línea 
+y además respetan el ancho, el alto y los márgenes verticales. 
+Son lo mejor de los dos mundos.
+
+
+----- POSITION ----- ----- POSITION ----- ----- POSITION ----- ----- POSITION ----- ----- POSITION ----- 
+
+STATIC: El estado por defecto de los elementos
+
+RELATIVE: Nos permite agregarle los atributos LEFT RIGHT TOP Y BOTTOM, y poder movernos libremente dentro de su caja padre
+podemos salir de los bordes de la caja y si queremos que corte la parte sobrante, ponerle OVERFLOW
+
+ ABSOLUTE: Automaticamente no respetará las reglas de la caja que lo contiene y se irá hacia el padre más proximo que sea relativo
+ (por defecto el body). Si queremos que un elemento absoluto sea contenido en una caja, su padre debe de ser RELATIVE
+ 
+ FIXEX: Se mostrará de continuo en la pantalla en la posición indicada aunque hagamos scroll.
