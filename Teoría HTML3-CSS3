@@ -37,3 +37,39 @@ podemos salir de los bordes de la caja y si queremos que corte la parte sobrante
  (por defecto el body). Si queremos que un elemento absoluto sea contenido en una caja, su padre debe de ser RELATIVE
  
  FIXEX: Se mostrará de continuo en la pantalla en la posición indicada aunque hagamos scroll.
+ 
+ 
+----- FLEXBOX ----- ----- FLEXBOX ----- ----- FLEXBOX ----- ----- FLEXBOX ----- ----- FLEXBOX ----- 
+
+Tipo especial de display. Hay que poner la propiedad display:flex; en el contenedor padre para que afecte a sus hijos
+
+JUSTIFY-CONTENT:
+
+flex-start -> se alinea a la izq
+flex-end -> se alinea al der
+center -> se alinea al centro
+space-around -> añade el mismo margen a izq y der a cada uno de los hijos
+space-between -> ocupa todo el ancho del padre y redistribuye a los hijos
+
+FLEX-WRAP:
+
+wrap -> Si quieremos que los hijos mantengan su ancho original
+non-wrap -> Es el valor por defecto, las cajas hijas van cambiando su ancho si se reduce el ancho del padre
+
+FLEX-DIRECTION:
+
+row -> Es el valor por defecto, los hijos se ponen en fila
+column -> Los hijos se ponen en columna
+
+ALIGN-ITEMS:
+
+center- > si queremos alinear verticalmente los elementos
+
+
+Centrar el contenido de una caja horizontal y verticalmente con FLEXBOX:
+justify-content: center
+align-items:center
+flex-direction: column
+
+
+
